@@ -1,12 +1,8 @@
-# Jovo Web Starter: Standalone Voice Experience
+# Jovo Web Starter React: Standalone Voice Experience
 
 Fully customizable open source voice experience that can be hosted on any website.
 
-Built with the [Jovo Framework](https://github.com/jovotech/jovo-framework), [Vue.js](https://github.com/vuejs/vue), and [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss).
-
-Demo: [jovo.tech/demos/starter-web-standalone](https://www.jovo.tech/demos/starter-web-standalone/).
-
-![Jovo Standalone Voice Experience](./img/starter-web-standalone.gif)
+Built with the [Jovo Framework](https://github.com/jovotech/jovo-framework), [React](https://reactjs.org/), and [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss).
 
 > Support Jovo by starring [our main repo](https://github.com/jovotech/jovo-framework) or joining [our Open Collective](https://opencollective.com/jovo-framework).
 
@@ -36,13 +32,13 @@ Demo: [jovo.tech/demos/starter-web-standalone](https://www.jovo.tech/demos/start
 
     Alternatively, you can clone this repository and run `npm install`.
 
-2.  **Start client (Vue.js)**
+2.  **Start client (React)**
 
     ```sh
      $ cd client
 
-     # Start Vue frontend
-     $ npm run serve
+     # Start React frontend
+     $ npm run start
     ```
 
 3.  **Start app (Jovo)**
@@ -68,7 +64,7 @@ Demo: [jovo.tech/demos/starter-web-standalone](https://www.jovo.tech/demos/start
 This repository contains:
 
 - `app`: Backend logic built with the [Jovo Framework](https://github.com/jovotech/jovo-framework) using its [Web Platform integration](https://github.com/jovotech/jovo-framework/tree/master/jovo-platforms/jovo-platform-web).
-- `client`: Frontend built with [Vue.js](https://vuejs.org/) and [Tailwind CSS](https://tailwindcss.com/), communicating with the backend using the [Jovo Web Client for Vue.js](https://github.com/jovotech/jovo-framework/tree/master/jovo-clients/jovo-client-web-vue).
+- `client`: Frontend built with [React](https://reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/), communicating with the backend using the [Jovo Web Client](https://github.com/jovotech/jovo-framework/tree/master/jovo-clients/jovo-client-web)
 
 ## Customization
 
@@ -78,9 +74,9 @@ The following documentation will help you understand how the starter is structur
 
 ### Client
 
-The client is a Vue.js project that consists of a single component "RecordButton" which is styled in Tailwind CSS.
+The client is a React project that consists of a single component "RecordButton" which is styled in Tailwind CSS.
 
-If you are new to Vue.js and want to develop your website starting with this project, you can take a look at the Vue.js guide [here](https://vuejs.org/v2/guide/). This will give you a quick start to how Vue.js works, so you can start creating right away.
+If you are new to React and want to develop your website starting with this project, you can take a look at the React tutorial [here](https://reactjs.org/tutorial/tutorial.html). This will give you a quick start to how React works, so you can start creating right away.
 
 #### Component: RecordButton
 
@@ -110,9 +106,9 @@ The `app.ts` file contains the initialization of the app and its plugins as well
 
 ### Client
 
-> Take a look at the Vue deployment docs [here](https://cli.vuejs.org/guide/deployment).
+> Take a look at the React deployment docs [here](https://create-react-app.dev/docs/deployment).
 
-To integrate Jovo Web Standalone into your existing project, you can use the npm script `build` inside of the `client/` directory. This will produce a bundle in a dedicated `dist/` directory, containing the whole Vue.js client with minified HTML, CSS and JavaScript, ready for dynamic integration into any website.
+To integrate Jovo Web Standalone into your existing project, you can use the npm script `build` inside of the `client/` directory. This will produce a bundle in a dedicated `build/` directory, containing the whole React client with minified HTML, CSS and JavaScript, ready for dynamic integration into any website.
 
 ### App
 
